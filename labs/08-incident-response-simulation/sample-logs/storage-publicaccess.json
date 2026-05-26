@@ -1,0 +1,26 @@
+{
+  "protoPayload": {
+    "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+    "methodName": "storage.setIamPermissions",
+    "authenticationInfo": {
+      "principalEmail": "svc-unused@example-project.iam.gserviceaccount.com"
+    },
+    "requestMetadata": { "callerIp": "203.0.113.42" },
+    "resourceName": "projects/_/buckets/example-public-bucket",
+    "serviceData": {
+      "policyDelta": {
+        "bindingDeltas": [
+          {
+            "action": "ADD",
+            "role": "roles/storage.objectViewer",
+            "member": "allUsers"
+          }
+        ]
+      }
+    }
+  },
+  "resource": { "type": "gcs_bucket", "labels": { "bucket_name": "example-public-bucket" } },
+  "timestamp": "2026-05-26T02:19:11Z",
+  "severity": "NOTICE",
+  "logName": "projects/example-project/logs/cloudaudit.googleapis.com%2Factivity"
+}

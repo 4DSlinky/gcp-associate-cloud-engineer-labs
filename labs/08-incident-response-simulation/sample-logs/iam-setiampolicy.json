@@ -1,0 +1,29 @@
+{
+  "protoPayload": {
+    "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+    "methodName": "SetIamPolicy",
+    "authenticationInfo": {
+      "principalEmail": "svc-unused@example-project.iam.gserviceaccount.com"
+    },
+    "requestMetadata": {
+      "callerIp": "203.0.113.42",
+      "callerSuppliedUserAgent": "google-api-python-client/2.0.0"
+    },
+    "resourceName": "projects/example-project",
+    "serviceData": {
+      "policyDelta": {
+        "bindingDeltas": [
+          {
+            "action": "ADD",
+            "role": "roles/owner",
+            "member": "serviceAccount:svc-unused@example-project.iam.gserviceaccount.com"
+          }
+        ]
+      }
+    }
+  },
+  "resource": { "type": "project", "labels": { "project_id": "example-project" } },
+  "timestamp": "2026-05-26T02:17:04Z",
+  "severity": "NOTICE",
+  "logName": "projects/example-project/logs/cloudaudit.googleapis.com%2Factivity"
+}
