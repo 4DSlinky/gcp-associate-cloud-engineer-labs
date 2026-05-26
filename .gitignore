@@ -1,0 +1,30 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Python (for lab 07)
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Local environment files — never commit secrets
+.env
+.env.*
+
+# gcloud / credentials
+*.key.json
+*-key.json
+service-account*.json
+application_default_credentials.json
+
+# Terraform (if I add it later)
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
